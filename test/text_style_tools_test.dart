@@ -1,12 +1,21 @@
-import 'package:flutter_test/flutter_test.dart';
-
+import 'package:flutter/material.dart';
 import 'package:text_style_tools/text_style_tools.dart';
 
-void main() {
-  test('adds one to input values', () {
-    final calculator = Calculator();
-    expect(calculator.addOne(2), 3);
-    expect(calculator.addOne(-7), -6);
-    expect(calculator.addOne(0), 1);
-  });
+class HomePage extends StatelessWidget {
+  const HomePage({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      body: Column(
+        children: [
+          Text("hello, my name is sahil.".toSentenceCase()),
+          Text("hello, my name is sahil.".toTitleCase()),
+          Text("hello, my name is sahil.".toCamelCase()),
+          Text("hello, my name is sahil.".toUpperCaseExt()),
+          Text("HELLO, MY NAME IS SAHIL.".toLowerCaseExt()),
+        ],
+      ),
+    );
+  }
 }

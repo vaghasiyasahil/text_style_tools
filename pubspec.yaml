@@ -1,7 +1,7 @@
 name: text_style_tools
-description: "A new Flutter project."
+description: "A small utility package to convert text between sentence, title, camelCase and other cases easily."
 version: 0.0.1
-homepage:
+homepage: https://github.com/vaghasiyasahil/text_style_tools
 
 environment:
   sdk: ^3.9.2
